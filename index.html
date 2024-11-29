@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoAhead</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+  <div class="parentSection">
+  <div class="section1">
+    <div class="container01">
+        <div class="greeting">
+            <h1 class="greeting-text">Welcome to GoAhead!</h1>
+        </div>
+        <div class="main-section">
+            <h1 class="main-title">GoAhead</h1>
+            <div class="arrow-container">
+                <div class="arrow arrow-up">
+                    <span>Priority</span>
+                </div>
+                <div class="arrow arrow-right">
+                    <span>Data-Driven Strategies</span>
+                </div>
+                <div class="arrow arrow-down">
+                    <span>Personalized Motivation</span>
+                </div>
+                <div class="arrow arrow-left">
+                    <span>Focus on Overall Wellness</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="section2">
+  <!-- Section 2 -->
+   <!-- Header -->
+  <header>
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+    <div class="title">GoAhead</div>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+  <div class="sidebar" id="sidebar">
+    <a href="#">Your Productivity</a>
+    <a href="#">Today's Goal</a>
+    <a href="#">Feedback</a>
+    <a href="#">History</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Introduction Section -->
+    <div class="intro">
+      <h2>Welcome to GoAhead! </h2> <br><br>
+      Plan your day with intent and accomplish your goals while staying motivated!
+    </div>
+
+    <!-- Question Box -->
+    <div class="question-box">
+      <div id="question-container">
+        <div class="question" id="question"></div>
+        <div class="input-section">
+          <input type="text" id="answer" placeholder="Type your answer here..." />
+        </div>
+        <div class="btn-container">
+          <button class="next-btn" id="next-btn" onclick="nextQuestion()">Next</button>
+          <button class="submit-btn" id="submit-btn" onclick="submitAnswers()" style="display: none;">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    🌟 Keep believing in yourself, and you’ll achieve wonders! 🌟
+  </footer>
+  </div>
+  </div>
+</body>
+</html>
